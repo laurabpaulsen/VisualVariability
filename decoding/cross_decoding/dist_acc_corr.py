@@ -1,7 +1,6 @@
 """
 This script investigates the correlation between the decoding accuracies and the distance between the sessions.
 - The distances are defined both as days and as the number of sessions.
-- The accuracies are calculated for the visual and the memory sessions separately, as well as for the combined sessions.
 """
 
 import numpy as np

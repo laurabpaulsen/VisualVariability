@@ -184,15 +184,15 @@ def main():
                         accuracies[train_sesh, test_sesh, t, t2, cv_test] = accuracy
 
     # making sure output path exists
-    #if not output_path.parent.exists():
-    #    output_path.parent.mkdir(parents=True)
+    if not output_path.parent.exists():
+        output_path.parent.mkdir(parents=True)
 
-    #if not output_path_betas.parent.exists():
-    #    output_path_betas.parent.mkdir(parents=True)
+    if not output_path_betas.parent.exists():
+        output_path_betas.parent.mkdir(parents=True)
    
     # saving accuracies
-    #np.save(output_path, accuracies)
-    #np.save(output_path_betas, betas)
+    np.save(output_path, accuracies)
+    np.save(output_path_betas, betas)
 
     
 
